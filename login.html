@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login - ShopEase</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="navbar"></div>
+<main class="container auth-wrap">
+  <div class="auth">
+    <div class="auth-side"><h2>Welcome to ShopEase</h2><p>Login to see your cart, track orders and checkout faster.</p><div class="big">🛍️</div></div>
+    <div class="auth-form">
+      <div class="tabs"><button id="tabLogin" class="on">Login</button><button id="tabReg">Register</button></div>
+      <form id="loginForm">
+        <div class="field"><label>Email</label><input name="email" type="email" required placeholder="you@example.com"></div>
+        <div class="field"><label>Password</label><input name="password" type="password" required placeholder="Your password"></div>
+        <button class="btn btn-primary btn-block">Login</button>
+        <div class="hint">Demo customer: <b>demo@shopease.com</b> / <b>demo123</b><br>Admin: <b>admin@shopease.com</b> / <b>admin123</b></div>
+      </form>
+      <form id="regForm" class="hidden">
+        <div class="field"><label>Full name</label><input name="name" required minlength="2" placeholder="Your name"></div>
+        <div class="field"><label>Email</label><input name="email" type="email" required placeholder="you@example.com"></div>
+        <div class="field"><label>Mobile number</label><input name="phone" type="tel" placeholder="10-digit number"></div>
+        <div class="field"><label>Password</label><input name="password" type="password" required minlength="6" placeholder="At least 6 characters"></div>
+        <button class="btn btn-primary btn-block">Create account</button>
+      </form>
+    </div>
+  </div>
+</main>
+<div id="footer"></div>
+<script src="js/mock-api.js"></script>
+<script src="js/app.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>

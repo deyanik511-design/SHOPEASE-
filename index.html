@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ShopEase</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<div id="navbar"></div>
+<main class="container">
+  <section class="hero" id="hero">
+    <div class="slides" id="slides">
+      <div class="slide s1"><div><h2>Mobiles &amp; Gadgets<br>up to 40% off</h2><p>Latest smartphones, laptops and accessories at unbeatable prices.</p><a class="btn btn-amber" href="index.html?category=Mobiles">Shop Mobiles</a></div><div class="big">📱</div></div>
+      <div class="slide s2"><div><h2>Fashion Festival<br>Min. 50% off</h2><p>Shirts, shoes, kurtis and more from top brands.</p><a class="btn btn-amber" href="index.html?category=Fashion">Shop Fashion</a></div><div class="big">👟</div></div>
+      <div class="slide s3"><div><h2>Read More,<br>Pay Less</h2><p>Bestselling books on tech, habits and life.</p><a class="btn btn-amber" href="index.html?category=Books">Shop Books</a></div><div class="big">📚</div></div>
+    </div>
+    <div class="dots" id="dots"></div>
+  </section>
+
+  <section class="section" id="catSection"><div class="section-head"><h2>Shop by category</h2></div><div class="cat-tiles" id="catTiles"></div></section>
+  <section class="section" id="dealsSection"><div class="section-head"><h2>🔥 Deals of the day</h2><a href="index.html?sort=discount">See all</a></div><div class="grid" id="deals"></div></section>
+
+  <section class="section" id="listing">
+    <div class="section-head"><h2 id="listTitle">All products</h2><span id="resultCount" style="color:var(--muted)"></span></div>
+    <div class="toolbar">
+      <div class="chips" id="chips"></div>
+      <label>Sort by <select id="sort">
+        <option value="">Relevance</option><option value="price_asc">Price: Low to High</option><option value="price_desc">Price: High to Low</option>
+        <option value="rating">Top rated</option><option value="discount">Biggest discount</option></select></label>
+    </div>
+    <div class="grid" id="products"></div>
+  </section>
+</main>
+<div id="footer"></div>
+<script src="js/mock-api.js"></script>
+<script src="js/app.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>
